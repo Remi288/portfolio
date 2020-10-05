@@ -9,3 +9,8 @@ class Course(models.Model):
 
     def __str__(self):
         return self.summary
+
+
+class Testing(models.Model):
+    name = models.CharField(max_length=100)
+    username = models.CharField(max_length=200)
